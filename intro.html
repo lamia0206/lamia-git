@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="https://www.youtube.com/">
+        <img src="./Capture.PNG" alt="not found" width="100px" height="100px">
+    </a>
+    <h2>Relative URLs</h2>
+    <p><a href="page1.html">Page 1</a></p>
+    <p><a href="page2.html" target="_self">Page 2</a></p>
+    <p><a href="ziouani.ln@gmail.com">send to this mail</a></p>
+    <button>click me</button>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>first name</th>
+                    <th>last name</th>
+                    <th>age</th>
+                    <th>test</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>fouzi</td>
+                    <td>oukacha</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>fouzi</td>
+                    <td>oukacha</td>
+                    <td>26</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <h3>Description List</h3>
+    <dl>
+        <dt>Test</dt>
+        <dd>Testttt</dd>
+
+        <dt>Test</dt>
+        <dd>Testttt</dd>
+    </dl>
+
+    <form>
+        <p><label for="full">full name</label></p>
+        <input type="text" placeholder="full name" id="full" required />
+        <p><label for="telephone">numéro de telephone</label></p>
+        <input type="text" value="+213" id="telephone">
+        <p><label for="birthday">birthday</label></p>
+        <input type="date" id="birthday">
+        <p><label for="age">age</label></p>
+        <input type="number" id="age">
+        <p><input placeholder="nom et prenom"></p>
+        <p><label for="module">choisissez un module</label></p>
+        <select name="module" id="module">
+            <option value="1">analyse</option>
+            <option value="2">algo</option>
+            <option value="3">archi</option>
+            <option value="4">THL</option>
+        </select>
+        <p><label for="commentaire"></label></p>
+        <textarea name="comment" placeholder="comment " id="commentaire"></textarea>
+
+        <h2>choisisez un langage </h2>
+        <input type="radio" id="html" name="fav_langage" value="HTML">
+        <label for="html">html</label> <br />
+        <input type="radio" id="css" name="fav_langage" value="CSS">
+        <label for="css">css</label><br />
+        <input type="radio" id="js" name="fav_langage" value="JS">
+        <label for="js">js</label><br />
+        <input type="radio" id="py" name="fav_langage" value="PY">
+        <label for="py">py</label><br />
+
+        <h2>FILE UPLOAD</h2>
+        <input type="file" name="my-file" accept="image/jpg , image/PNG">
+
+        <h3>la wilaya quivous convient</h3>
+        <input type="checkbox" name="wilaya" id="blida" value="blida">
+        <label for="blida">Blida</label> <br />
+        <input type="checkbox" name="wilaya" id="alger" value="alger">
+        <label for="alger">Alger</label><br />
+        <input type="checkbox" name="wilaya" id="tipaza" value="tipaza">
+        <label for="tipaza">Tipaza</label><br />
+
+        <h3>Datalist</h3>
+        <input list="browser">
+        <datalist id="browser">
+            <option value="chrome"></option>
+            <option value="firefox"></option>
+            <option value="microsoft"></option>
+        </datalist>
+
+        <fieldset>
+            <legend>personnal informations</legend>
+            <label for="name">full name</label>
+            <input type="text" id="name" placeholder=" ur name">
+
+            <label for="age">age</label>
+            <input type="text" id="age">
+        </fieldset>
+
+        <h3>output elements</h3>
+        <form oninput="x.value=parseInt(a.value)+ parseInt(b.value)">
+            <input type="range" id="a" value="50"/>
+            <input type="number" id="b" value="25"/>
+            <output name="x"></output>
+
+        </form>
+
+
+    </form>
+</body>
+
+</html>
